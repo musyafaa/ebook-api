@@ -19,3 +19,22 @@ Route::get('/', function () {
 Route::get('coba', function() {
     return "halo";
 });
+Route::get('coba1', function() {
+    return ['petra', 'mus', 'izumi'];
+});
+Route::get('coba2', function() {
+    return [
+        'Nama' => 'Muhammad Musyafa Fadila',
+        'Kelas' => 'XII RPL 5',
+        'NIS' => 3103120148
+    ];
+});
+Route::get('coba3', function() {
+    return response()->json(
+        [
+            'Nama' => 'Muhammad Musyafa Fadila',
+            'Kelas' => 'XII RPL 5',
+            'NIS' => 3103120148
+        ],201
+    );
+});
