@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('coba', function() {
-    return "halo";
+    return "halo, nama saya muhammad musyafa fadila";
 });
 Route::get('coba1', function() {
     return ['petra', 'mus', 'izumi'];
